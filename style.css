@@ -1,0 +1,57 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, gray, gray);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .city-photo {
+            width: 400px; 
+            height: auto; 
+            border-radius: 10px; 
+            border: 5px solid #3498db; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px 0; 
+        }
+        p {
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        ul, ol {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 {
+            animation: fadeIn 2s ease-in;
+        }
+        /* <p>New York City has always fascinated me, and not just for the usual reasons... One time, I watched a documentary about the hidden jazz clubs in Greenwich Village, and I was hooked. I'd love to find one of those places and just soak in the atmosphere, even if it's packed shoulder-to-shoulder.</p> */

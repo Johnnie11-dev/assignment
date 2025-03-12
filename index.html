@@ -1,69 +1,13 @@
 <!DOCTYPE html>
 <head>
-    <title>About Ajneet Kaur</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, gray, gray);
-            color: white;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .city-photo {
-            width: 400px; 
-            height: auto; 
-            border-radius: 10px; 
-            border: 5px solid #3498db; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin: 20px 0; 
-        }
-        p {
-            line-height: 1.6;
-            max-width: 600px;
-            margin: 20px auto;
-        }
-        ul, ol {
-            text-align: left;
-            display: inline-block;
-            margin: 0 auto;
-        }
-        a {
-            color: red;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        h1 {
-            animation: fadeIn 2s ease-in;
-        }
-    </style>
+    <title>About  Arjneet Kaur</title>
+    
 </head>
 <body>
     <div class="container">
         <h1>Introduction</h1>
-        <img src="/Images/profilephoto.jpg" alt="My profile photo">
-        <p>Hello! My name is Ajneet Kaur, and I am a web development enthusiast. I enjoy coding, reading, and exploring new technologies. I am passionate about creating user-friendly and accessible websites.</p>
+        <img src="/Images/profilephoto.jpg" alt="My profile photo" width="200px" height="200px ">
+        <p>Hello! My name is  Arjneet Kaur, and I am a web development enthusiast. I enjoy coding, reading, and exploring new technologies. I am passionate about creating user-friendly and accessible websites.</p>
 
         <h2>Favorite Books</h2>
         <ul>
@@ -81,7 +25,7 @@
 
         <h2>City Exploration</h2>
         <p>New York City has always fascinated me, and not just for the usual reasons like the Statue of Liberty or Times Square—though I’d definitely check those out too. What really draws me in is the idea of wandering through the Village, maybe stumbling into one of those tiny, old bookstores that smell like dusty paper and history. I’ve seen those old movies where people are packed into little jazz clubs, and I’d love to experience that, even if it’s shoulder-to-shoulder crowded. And honestly? I’m kind of obsessed with the idea of grabbing a hot dog from a street vendor, finding a random bench in a park, and just watching the world go by. It’s that chaotic energy of the city that pulls me in—the feeling that anything could happen at any moment. I’m not even sure if I’d like the subway, but I feel like I have to try it at least once. New York just seems like the kind of place where you’d have these weird, unforgettable little moments that stick with you forever.</p>
-        <img src="/Images/New York City.jpg" alt="Picture of New York City" class="city-photo">
+        <img src="/Images/New York City.jpg" alt="Picture of New York City" width="200px">
         <p>Learn more about <a href="https://en.wikipedia.org/wiki/New_York_City#:~:text=New%20York%20is%20a%20global,the%20United%20Nations%2C%20international%20diplomacy." target="_blank">New York City</a>.</p>
 
         <h2>Work and Volunteer Experience</h2>
@@ -92,5 +36,50 @@
             <li><strong>Volunteer Role 3:</strong> A few months ago, I started volunteering at a homeless shelter downtown. My main role was serving meals during dinner hours, but I also helped set up beds and organize donations.</li>
         </ul>
     </div>
+
+    <!-- Contact Section -->
+
+        <!-- the section tag helped to structure the document by breaking it into meaning parts -->
+    <section id="contact">
+        <h2>Contact Section</h2>
+        <form action="#" method="post">
+
+            <!-- Used fieldset to group related form elements together -->
+            <fieldset>
+
+                <!-- legend is used to to provide a title or description for the grouped form elements. -->
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Inquiry Details</legend>
+                <p>Type of Inquiry:</p>
+                <ul>
+                    <li>
+                        <input type="radio" id="general" name="inquiry" value="General Question" required>
+                        <label for="general">General Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="feedback" name="inquiry" value="Feedback">
+                        <label for="feedback">Feedback</label>
+                    </li>
+                    
+                </ul>
+                
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to newsletter</label><br><br>
+            </fieldset>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025  Arjneet Kaur. All rights reserved.</p>
+    </footer>
 </body>
 </html>
